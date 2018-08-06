@@ -65,11 +65,11 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($primary-color, 5);
+    background: darken($primary-color, 1);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
-
+    border-left: 3px solid $secondary-color;
     &.show {
       //slide from margin-top
       transform: translate3d(0, 0, 0);

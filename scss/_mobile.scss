@@ -22,7 +22,8 @@
     }
   }
 
-  ul.menu-nav,div.menu-branding {
+  ul.menu-nav,
+  div.menu-branding {
     float: none;
     width: 100%;
     min-height: 0;
@@ -36,6 +37,7 @@
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px;
+    border-left: 0px;
   }
 
   .menu-branding {
@@ -43,10 +45,20 @@
     transform: translate3d(100%, 0, 0);
 
     .menu-portrait {
-      background: url('../img/portrait_small.jpg');
+      background: url("../img/portrait_small.jpg");
       width: 150px;
       height: 150px;
     }
+  }
+
+  .about-info {
+    grid-template-areas:
+      "bio-image"
+      "bio"
+      "job-1"
+      "job-2"
+      "job-3";
+    grid-template-columns: 1fr;
   }
 }
 
@@ -56,19 +68,18 @@
     margin-top: 10vh;
   }
 
-main {
+  main {
+    .lg-heading {
+      font-size: 5rem;
+      line-height: 0.5;
+    }
 
-  .lg-heading {
-    font-size: 5rem;
-    line-height: 0.5;
+    .text-secondary {
+      font-size: 3.5rem;
+    }
   }
 
-  .text-secondary {
-    font-size: 3.5rem;
+  .menu {
+    opacity: 0.97;
   }
-}
-
-.menu {
-  opacity: 0.97;
-}
 }

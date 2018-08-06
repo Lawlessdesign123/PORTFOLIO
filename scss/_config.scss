@@ -29,6 +29,8 @@ $background-opacity: 0.9;
   }
 }
 
+// set text $primary-color
+
 @mixin mediaEx {
   @media screen and (min-width: 1171px) {
     @content;
