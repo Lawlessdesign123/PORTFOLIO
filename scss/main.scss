@@ -86,10 +86,12 @@ main {
 
 .about-info {
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 25px;
   grid-template-areas:
     "bio-image bio bio"
-    "job-1 job-2 job-3";
+    "job-1 work work"
+    "job-2 work work"
+    "job-3 work work";
   grid-template-columns: repeat(3, 1fr);
   .bio-image {
     grid-area: bio-image;
@@ -104,6 +106,7 @@ main {
 
   .job-1 {
     grid-area: job-1;
+    border-radius: 25px 0 0 0;
   }
 
   .job-2 {
@@ -112,10 +115,58 @@ main {
 
   .job-3 {
     grid-area: job-3;
+    border-radius: 0 0 0 25px;
   }
 
   .job {
+    min-height: 80px;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      color: $secondary-color;
+      @include easeOut;
+    }
+  }
+
+  .lighten1 {
     background: lighten($primary-color, 5);
+    color: $secondary-color;
+    @include easeOut;
+  }
+
+  .job h2 {
+    margin-top: 25px;
+  }
+  .work {
+    border-radius: 0 25px 25px 0;
+    grid-area: work;
+    background: lighten($primary-color, 5);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  #work,
+  #sales,
+  #account,
+  #design {
+    display: none;
+  }
+}
+
+.pulsate {
+  -webkit-animation: pulsate 1s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.5;
+  color: $secondary-color;
+}
+@-webkit-keyframes pulsate {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
   }
 }
 
@@ -123,6 +174,11 @@ main {
   text-align: center;
   padding: 1rem;
   background: lighten($primary-color, 5);
+}
+
+strong {
+  text-decoration: underline;
+  font-size: 16px;
 }
 
 @import "mobile";

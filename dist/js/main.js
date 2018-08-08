@@ -31,12 +31,58 @@ function toggleMenu() {
   }
 }
 
-const blur = document.querySelector('.text-secondary');
+const blur = document.querySelector(".text-secondary");
 
 function blub() {
-  blur.classList.add('bob');
+  blur.classList.add("bob");
 }
 
 function reBlub() {
-  blur.classList.remove('bob');
+  blur.classList.remove("bob");
+}
+
+function reVeal() {
+  document.getElementById("work").style.display = "block";
+  document.getElementById("sales").style.display = "block";
+  document.getElementById("account").style.display = "none";
+  document.getElementById("design").style.display = "none";
+}
+
+function reVeal2() {
+  document.getElementById("work").style.display = "block";
+  document.getElementById("sales").style.display = "none";
+  document.getElementById("account").style.display = "block";
+  document.getElementById("design").style.display = "none";
+}
+
+function reVeal3() {
+  document.getElementById("work").style.display = "block";
+  document.getElementById("sales").style.display = "none";
+  document.getElementById("account").style.display = "none";
+  document.getElementById("design").style.display = "block";
+}
+
+const light1 = document.querySelector(".job-1");
+const light2 = document.querySelector(".job-2");
+const light3 = document.querySelector(".job-3");
+
+function lit() {
+  light1.classList.remove("pulsate");
+  light1.classList.add("lighten1");
+  light2.classList.remove("lighten1");
+  light3.classList.remove("lighten1");
+}
+
+function lit2() {
+  light1.classList.remove("pulsate");
+  light1.classList.remove("lighten1");
+  light2.classList.add("lighten1");
+  light3.classList.remove("lighten1");
+}
+
+function lit3() {
+  light1.classList.remove("pulsate");
+  light1.classList.remove("lighten1");
+  light2.classList.remove("lighten1");
+  light3.classList.add("lighten1");
 }
