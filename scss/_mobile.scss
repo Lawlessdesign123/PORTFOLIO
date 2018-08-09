@@ -20,7 +20,7 @@
 
     .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
 
     .text-secondary {
@@ -108,5 +108,10 @@
 
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  #contact {
+    padding-top: 5rem;
+    text-align: center;
   }
 }
