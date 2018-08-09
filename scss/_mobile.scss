@@ -1,9 +1,15 @@
 // extra large wide screens
 @include mediaEx {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 // large screens
 @include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 // laptops tablets
@@ -57,8 +63,25 @@
       "bio"
       "job-1"
       "job-2"
-      "job-3";
+      "job-3"
+      "work";
     grid-template-columns: 1fr;
+
+    .job-1,
+    .job-2,
+    .job-3 {
+      display: none;
+    }
+
+    #work,
+    #sales,
+    #account,
+    #design {
+      display: block;
+    }
+  }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -81,5 +104,9 @@
 
   .menu {
     opacity: 0.97;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
   }
 }

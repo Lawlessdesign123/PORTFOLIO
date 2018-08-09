@@ -37,13 +37,12 @@
       </nav>
     </header>
 
-    <main id="about">
-        <h1 class="lg-heading"><span id="s" onmouseover="blub();" onmouseout="reBlub();">About</span> <span class="text-secondary block">Me</span></h1>
-        <h2 class="sm-heading">Let me tell you a few things...</h2>
+    <main id="about" onmouseover="blub();">
+        <h1 class="lg-heading"><span id="s">About</span> <span class="text-secondary block">Me</span></h1>
         <div class="about-info">
-          <img src="img/portrait.jpg" alt="me" class="bio-image" onmouseover="blub();" onmouseout="reBlub();">
+          <img src="img/portrait.jpg" alt="me" class="bio-image">
           <div class="bio">
-            <h3 class="text-secondary">BIO</h3>
+            <h3 class="text-secondary" id="bb">BIO</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcot</p>
           </div>
           <div class="work" id="work">
@@ -61,7 +60,7 @@
           <div class="job job-2" onClick="lit2(); reVeal2();">
             <h2>Account Management</h2>
           </div>
-          <div class="job job-3" onclick="lit3(); reVeal3();" onmouseover="blub();" onmouseout="reBlub();">
+          <div class="job job-3" onclick="lit3(); reVeal3();">
             <h2>Web Design</h2>
           </div>
         </div>
