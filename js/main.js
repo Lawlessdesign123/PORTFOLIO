@@ -37,10 +37,6 @@ function blub() {
   blur.classList.add("bob");
 }
 
-function reBlub() {
-  blur.classList.remove("bob");
-}
-
 function reVeal() {
   document.getElementById("work").style.display = "block";
   document.getElementById("sales").style.display = "block";
@@ -86,3 +82,15 @@ function lit3() {
   light2.classList.remove("lighten1");
   light3.classList.add("lighten1");
 }
+
+// scroll
+$('#scroll, #scroll2, #scroll3').on('click', function() {
+  const scroll = $('#top').position().top;
+
+  $('html, body').animate(
+    {
+      scrollTop: scroll
+    },
+    900
+  );
+});

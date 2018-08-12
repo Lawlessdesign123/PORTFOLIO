@@ -41,16 +41,13 @@
         <h1 class="lg-heading"><span id="s">About</span> <span class="text-secondary block">Me</span></h1>
         <h2 class="sm-heading">Let me tell you a few things...</h2>
         <div class="about-info">
-          <img src="img/portrait.jpg" alt="me" class="bio-image">
+          <img src="img/portrait.jpg" alt="me" class="bio-image" id="top">
           <div class="bio">
             <h3 class="text-secondary" id="bb">BIO</h3>
             <p>
-              A results oriented account executive with over 9 years’ experience in account management, customer service and admin roles. I am currently working at Europcar Ireland in their international corporate team. I have numerous different responsibilites in this role and handle the many different aspects of manageing accounts resulting in one point of contact for any client request.
-              I am focused on maximizing sales and improving customer experience by managing all clients systematically and logically. I am committed to the ideals of consistency and dedication in order to build the most successful business partnerships.
-              I am known to pick up multiple new systems and procedures in a short amount of time and always strive to deliver.
-              <br>
-              <br>
-              Along with sales, customer service and account management I have aslo started to learn about web development technologies and some of my projects can be seen on the Work section of this website. I am looking to join a fun, innovative and forward thinking company to not only apply my current skillset but to develop new skills along the way.
+              A results oriented account executive with over 9 years’ experience in sales, account management, customer service and admin roles. I am currently working at Europcar Ireland in their international corporate team. I have numerous responsibilites in this role and handle the many different aspects of manageing accounts, sales and customer service. This results in one point of contact for any client request or enquiry. I am focused on maximizing sales and improving customer experience by managing all clients systematically and logically. I am committed to the ideals of consistency and dedication in order to build the most successful business partnerships.
+              I am known to pick up multiple new systems and procedures in a short amount of time.<br>
+              Recently I have aslo started to learn about about various different web development technologies and some of my projects can be seen on the Work section of this website.
             </p>
           </div>
           <div class="work" id="work">
@@ -74,17 +71,17 @@
               Ideally I would be looking to bring these skills into a new account management position & create new tools & apps geared towards improving sales & customer experience.<br> Atom, Bootstrap, SASS, Angular & Github would be some of the tools I use in this area.
               <br>
               <br>
-              Key Skills - Frontend Technologies, HTML5, CSS3, SASS, Bootstrap, Javascript, Angular, GitHub, Color Philoshy, UI/UX Design.
+              Key Skills - Frontend Technologies, HTML5, CSS3, SASS, Bootstrap, Javascript, Angular, GitHub, Color Philoshy, UI/UX Design, Responsive Design.
             </p>
           </div>
 
-          <div class="job job-1 pulsate" onClick="lit(); reVeal();">
+          <div class="job job-1 pulsate" id="scroll" onClick="lit(); reVeal();">
             <h2>Sales</h2>
           </div>
-          <div class="job job-2" onClick="lit2(); reVeal2();">
+          <div class="job job-2" id="scroll2" onClick="lit2(); reVeal2();">
             <h2>Account Management</h2>
           </div>
-          <div class="job job-3" onclick="lit3(); reVeal3();">
+          <div class="job job-3" id="scroll3" onclick="lit3(); reVeal3();">
             <h2>Web Development</h2>
           </div>
         </div>
@@ -93,7 +90,10 @@
     <footer id="main-footer">
       Copyright &copy; 2018
     </footer>
-
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
